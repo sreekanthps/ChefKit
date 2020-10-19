@@ -9,6 +9,21 @@
 /* Begin PBXBuildFile section */
 		36AA45A44263FA5D958CE700 /* Pods_Chef_Kit_Chef_KitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE9E8631DF079238A439175 /* Pods_Chef_Kit_Chef_KitUITests.framework */; };
 		B1B24853DE1AFAFAE5ED9B1E /* Pods_Chef_KitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4F47917B19053DBA40573F /* Pods_Chef_KitTests.framework */; };
+		D1458B32253D75D0004418C8 /* DashBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B31253D75D0004418C8 /* DashBoardController.swift */; };
+		D1458B38253D76D8004418C8 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B37253D76D8004418C8 /* DashBoardView.swift */; };
+		D1458B3B253D7AA8004418C8 /* PromotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B3A253D7AA8004418C8 /* PromotionModel.swift */; };
+		D1458B3D253D7E9D004418C8 /* PromotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B3C253D7E9D004418C8 /* PromotionCell.swift */; };
+		D1458B3F253DAF8F004418C8 /* DashBoardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B3E253DAF8F004418C8 /* DashBoardMenuCell.swift */; };
+		D1458B41253DB25C004418C8 /* DashboardMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B40253DB25C004418C8 /* DashboardMenuView.swift */; };
+		D1458B43253DB2EB004418C8 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B42253DB2EB004418C8 /* MenuModel.swift */; };
+		D1458B45253DC0DE004418C8 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B44253DC0DE004418C8 /* MenuItemCell.swift */; };
+		D1458B47253DD983004418C8 /* DashBoardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B46253DD983004418C8 /* DashBoardTableView.swift */; };
+		D18152522539F02E002E9BB8 /* UINavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152512539F02E002E9BB8 /* UINavigationHelper.swift */; };
+		D18152542539F0CA002E9BB8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152532539F0CA002E9BB8 /* UIColorExtension.swift */; };
+		D18152562539F513002E9BB8 /* ColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152552539F513002E9BB8 /* ColorsHelper.swift */; };
+		D1A929ED2539E98B0090E537 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A929EC2539E98B0090E537 /* SplashViewController.swift */; };
+		D1A929EF2539EA960090E537 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A929EE2539EA950090E537 /* SplashView.swift */; };
+		D1A929F22539EB390090E537 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A929F12539EB390090E537 /* ActionDelegate.swift */; };
 		D1AD9C5B25372010002ABFF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AD9C5A25372010002ABFF5 /* AppDelegate.swift */; };
 		D1AD9C5F25372010002ABFF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AD9C5E25372010002ABFF5 /* ViewController.swift */; };
 		D1AD9C6225372010002ABFF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AD9C6025372010002ABFF5 /* Main.storyboard */; };
@@ -16,6 +31,7 @@
 		D1AD9C6725372014002ABFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AD9C6525372014002ABFF5 /* LaunchScreen.storyboard */; };
 		D1AD9C7225372015002ABFF5 /* Chef_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AD9C7125372015002ABFF5 /* Chef_KitTests.swift */; };
 		D1AD9C7D25372015002ABFF5 /* Chef_KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AD9C7C25372015002ABFF5 /* Chef_KitUITests.swift */; };
+		D1D6E8FE2539F8A900D4F420 /* fooddelivery.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D6E8FD2539F8A900D4F420 /* fooddelivery.json */; };
 		D2A597BAA45D4CBA3253A488 /* Pods_Chef_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9563E55B0F9B939B0013312F /* Pods_Chef_Kit.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +61,21 @@
 		A9A6C98CB6013CE1B39D2F35 /* Pods-Chef KitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef KitTests.debug.xcconfig"; path = "Target Support Files/Pods-Chef KitTests/Pods-Chef KitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A3D8BF4463225F4D5DE438 /* Pods-Chef Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef Kit.debug.xcconfig"; path = "Target Support Files/Pods-Chef Kit/Pods-Chef Kit.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B375FBB3DFC21ED560EA56 /* Pods-Chef Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef Kit.release.xcconfig"; path = "Target Support Files/Pods-Chef Kit/Pods-Chef Kit.release.xcconfig"; sourceTree = "<group>"; };
+		D1458B31253D75D0004418C8 /* DashBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardController.swift; sourceTree = "<group>"; };
+		D1458B37253D76D8004418C8 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
+		D1458B3A253D7AA8004418C8 /* PromotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionModel.swift; sourceTree = "<group>"; };
+		D1458B3C253D7E9D004418C8 /* PromotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCell.swift; sourceTree = "<group>"; };
+		D1458B3E253DAF8F004418C8 /* DashBoardMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardMenuCell.swift; sourceTree = "<group>"; };
+		D1458B40253DB25C004418C8 /* DashboardMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuView.swift; sourceTree = "<group>"; };
+		D1458B42253DB2EB004418C8 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		D1458B44253DC0DE004418C8 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		D1458B46253DD983004418C8 /* DashBoardTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTableView.swift; sourceTree = "<group>"; };
+		D18152512539F02E002E9BB8 /* UINavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationHelper.swift; sourceTree = "<group>"; };
+		D18152532539F0CA002E9BB8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		D18152552539F513002E9BB8 /* ColorsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsHelper.swift; sourceTree = "<group>"; };
+		D1A929EC2539E98B0090E537 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D1A929EE2539EA950090E537 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D1A929F12539EB390090E537 /* ActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
 		D1AD9C5725372010002ABFF5 /* Chef Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chef Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AD9C5A25372010002ABFF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AD9C5E25372010002ABFF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +89,7 @@
 		D1AD9C7825372015002ABFF5 /* Chef KitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chef KitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AD9C7C25372015002ABFF5 /* Chef_KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef_KitUITests.swift; sourceTree = "<group>"; };
 		D1AD9C7E25372015002ABFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D6E8FD2539F8A900D4F420 /* fooddelivery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fooddelivery.json; sourceTree = "<group>"; };
 		DEB361181385FE7B67ECB5FE /* Pods-Chef Kit-Chef KitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef Kit-Chef KitUITests.release.xcconfig"; path = "Target Support Files/Pods-Chef Kit-Chef KitUITests/Pods-Chef Kit-Chef KitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +144,121 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D1458B2F253D7553004418C8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B39253D7A98004418C8 /* Model */,
+				D1458B33253D75D5004418C8 /* View */,
+				D1458B30253D7562004418C8 /* Controller */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D1458B30253D7562004418C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B31253D75D0004418C8 /* DashBoardController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1458B33253D75D5004418C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B37253D76D8004418C8 /* DashBoardView.swift */,
+				D1458B40253DB25C004418C8 /* DashboardMenuView.swift */,
+				D1458B46253DD983004418C8 /* DashBoardTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1458B34253D75DD004418C8 /* CellTeamplate */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B36253D75F1004418C8 /* TableCellTemplate */,
+				D1458B35253D75E6004418C8 /* CollectionTemplate */,
+			);
+			path = CellTeamplate;
+			sourceTree = "<group>";
+		};
+		D1458B35253D75E6004418C8 /* CollectionTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B3C253D7E9D004418C8 /* PromotionCell.swift */,
+				D1458B3E253DAF8F004418C8 /* DashBoardMenuCell.swift */,
+			);
+			path = CollectionTemplate;
+			sourceTree = "<group>";
+		};
+		D1458B36253D75F1004418C8 /* TableCellTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B44253DC0DE004418C8 /* MenuItemCell.swift */,
+			);
+			path = TableCellTemplate;
+			sourceTree = "<group>";
+		};
+		D1458B39253D7A98004418C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1458B3A253D7AA8004418C8 /* PromotionModel.swift */,
+				D1458B42253DB2EB004418C8 /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D18152572539F804002E9BB8 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D1D6E8FD2539F8A900D4F420 /* fooddelivery.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		D1A929E82539E9540090E537 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D1AD9C5A25372010002ABFF5 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D1A929E92539E9630090E537 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D1A929EB2539E9720090E537 /* View */,
+				D1A929EA2539E96C0090E537 /* Controller */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D1A929EA2539E96C0090E537 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1A929EC2539E98B0090E537 /* SplashViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1A929EB2539E9720090E537 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1A929EE2539EA950090E537 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1A929F02539EB280090E537 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D1A929F12539EB390090E537 /* ActionDelegate.swift */,
+				D18152512539F02E002E9BB8 /* UINavigationHelper.swift */,
+				D18152532539F0CA002E9BB8 /* UIColorExtension.swift */,
+				D18152552539F513002E9BB8 /* ColorsHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D1AD9C4E25372010002ABFF5 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +284,12 @@
 		D1AD9C5925372010002ABFF5 /* Chef Kit */ = {
 			isa = PBXGroup;
 			children = (
-				D1AD9C5A25372010002ABFF5 /* AppDelegate.swift */,
+				D1458B34253D75DD004418C8 /* CellTeamplate */,
+				D1458B2F253D7553004418C8 /* Modules */,
+				D18152572539F804002E9BB8 /* Animations */,
+				D1A929F02539EB280090E537 /* Utilities */,
+				D1A929E92539E9630090E537 /* Splash */,
+				D1A929E82539E9540090E537 /* Application */,
 				D1AD9C5E25372010002ABFF5 /* ViewController.swift */,
 				D1AD9C6025372010002ABFF5 /* Main.storyboard */,
 				D1AD9C6325372014002ABFF5 /* Assets.xcassets */,
@@ -275,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AD9C6725372014002ABFF5 /* LaunchScreen.storyboard in Resources */,
+				D1D6E8FE2539F8A900D4F420 /* fooddelivery.json in Resources */,
 				D1AD9C6425372014002ABFF5 /* Assets.xcassets in Resources */,
 				D1AD9C6225372010002ABFF5 /* Main.storyboard in Resources */,
 			);
@@ -404,8 +557,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1458B32253D75D0004418C8 /* DashBoardController.swift in Sources */,
+				D1458B45253DC0DE004418C8 /* MenuItemCell.swift in Sources */,
+				D1458B38253D76D8004418C8 /* DashBoardView.swift in Sources */,
+				D1458B43253DB2EB004418C8 /* MenuModel.swift in Sources */,
+				D1458B3F253DAF8F004418C8 /* DashBoardMenuCell.swift in Sources */,
+				D1A929ED2539E98B0090E537 /* SplashViewController.swift in Sources */,
+				D18152542539F0CA002E9BB8 /* UIColorExtension.swift in Sources */,
+				D1A929EF2539EA960090E537 /* SplashView.swift in Sources */,
 				D1AD9C5F25372010002ABFF5 /* ViewController.swift in Sources */,
+				D1A929F22539EB390090E537 /* ActionDelegate.swift in Sources */,
+				D1458B47253DD983004418C8 /* DashBoardTableView.swift in Sources */,
 				D1AD9C5B25372010002ABFF5 /* AppDelegate.swift in Sources */,
+				D18152522539F02E002E9BB8 /* UINavigationHelper.swift in Sources */,
+				D1458B41253DB25C004418C8 /* DashboardMenuView.swift in Sources */,
+				D1458B3D253D7E9D004418C8 /* PromotionCell.swift in Sources */,
+				D1458B3B253D7AA8004418C8 /* PromotionModel.swift in Sources */,
+				D18152562539F513002E9BB8 /* ColorsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
