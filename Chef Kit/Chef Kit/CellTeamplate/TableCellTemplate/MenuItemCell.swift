@@ -66,12 +66,12 @@ class MenuItemCell: UITableViewCell {
      func layoutViews() {
          self.contentView.flex.define { (flex) in
             flex.addItem(rounderView).marginHorizontal(20).marginVertical(10).define { (flex) in
-                flex.addItem(imgView).height(300).width(100%)
+                flex.addItem(imgView).height(350).width(100%)
                 flex.addItem(itemName).marginTop(20).marginHorizontal(20)
                 flex.addItem(itemDesc).marginTop(20).marginHorizontal(20)
                 flex.addItem().direction(.row).marginTop(20).marginHorizontal(20).marginBottom(20).justifyContent(.spaceBetween).define { (flex) in
                     flex.addItem(itemDetails)
-                    flex.addItem(addtoCart).height(40).width(90)
+                    flex.addItem(addtoCart).height(40).width(110)
                 }
             }
           }
@@ -86,27 +86,27 @@ class MenuItemCell: UITableViewCell {
         setNeedsLayout()
     }
      
-     override func layoutSubviews() {
-            super.layoutSubviews()
-            layout()
-        }
-        func layout() {
-            contentView.flex.layout(mode: .adjustHeight)
-        }
-
-        required init?(coder aDecoder: NSCoder) {
-            //fatalError("init(coder:) has not been implemented")
-            return nil
-        }
-
-        override func sizeThatFits(_ size: CGSize) -> CGSize {
-            // 1) Set the contentView's width to the specified size parameter
-            contentView.pin.width(size.width)
-
-            // 2) Layout contentView flex container
-            layout()
-
-            // Return the flex container new size
-            return contentView.frame.size
-        }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layout()
+    }
+    func layout() {
+        contentView.flex.layout(mode: .adjustHeight)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        return nil
+    }
+    
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        // 1) Set the contentView's width to the specified size parameter
+        contentView.pin.width(size.width)
+        
+        // 2) Layout contentView flex container
+        layout()
+        
+        // Return the flex container new size
+        return contentView.frame.size
+    }
 }

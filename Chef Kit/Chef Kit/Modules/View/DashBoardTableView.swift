@@ -38,7 +38,9 @@ class DashBoardTableView: UIView {
            tableView.dataSource = self
            tableView.separatorStyle = .none
            tableView.register(MenuItemCell.self, forCellReuseIdentifier: MenuItemCell.reuseIdentifier)
+           tableView.register(CartItemCell.self, forCellReuseIdentifier: CartItemCell.reuseIdentifier)
            tableView.estimatedRowHeight = 120
+           tableView.showsVerticalScrollIndicator = false
            
        }
        
@@ -66,7 +68,7 @@ extension DashBoardTableView: UITableViewDataSource,UITableViewDelegate  {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: MenuItemCell.reuseIdentifier, for: indexPath) as? MenuItemCell,
+        if let cell = tableView.dequeueReusableCell(withIdentifier: CartItemCell.reuseIdentifier, for: indexPath) as? CartItemCell,
             let model = modelData?[indexPath.row]{
             cell.configureData(data: model)
             return cell

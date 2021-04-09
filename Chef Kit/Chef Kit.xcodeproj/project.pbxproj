@@ -21,6 +21,8 @@
 		D18152522539F02E002E9BB8 /* UINavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152512539F02E002E9BB8 /* UINavigationHelper.swift */; };
 		D18152542539F0CA002E9BB8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152532539F0CA002E9BB8 /* UIColorExtension.swift */; };
 		D18152562539F513002E9BB8 /* ColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152552539F513002E9BB8 /* ColorsHelper.swift */; };
+		D1A3951A2620CAE800651AB9 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A395192620CAE800651AB9 /* CartItemCell.swift */; };
+		D1A3951F2620CED600651AB9 /* KitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A3951E2620CED600651AB9 /* KitUtils.swift */; };
 		D1A929ED2539E98B0090E537 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A929EC2539E98B0090E537 /* SplashViewController.swift */; };
 		D1A929EF2539EA960090E537 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A929EE2539EA950090E537 /* SplashView.swift */; };
 		D1A929F22539EB390090E537 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A929F12539EB390090E537 /* ActionDelegate.swift */; };
@@ -73,6 +75,8 @@
 		D18152512539F02E002E9BB8 /* UINavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationHelper.swift; sourceTree = "<group>"; };
 		D18152532539F0CA002E9BB8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D18152552539F513002E9BB8 /* ColorsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsHelper.swift; sourceTree = "<group>"; };
+		D1A395192620CAE800651AB9 /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		D1A3951E2620CED600651AB9 /* KitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitUtils.swift; sourceTree = "<group>"; };
 		D1A929EC2539E98B0090E537 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D1A929EE2539EA950090E537 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		D1A929F12539EB390090E537 /* ActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				D1458B44253DC0DE004418C8 /* MenuItemCell.swift */,
+				D1A395192620CAE800651AB9 /* CartItemCell.swift */,
 			);
 			path = TableCellTemplate;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				D18152512539F02E002E9BB8 /* UINavigationHelper.swift */,
 				D18152532539F0CA002E9BB8 /* UIColorExtension.swift */,
 				D18152552539F513002E9BB8 /* ColorsHelper.swift */,
+				D1A3951E2620CED600651AB9 /* KitUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -567,10 +573,12 @@
 				D1A929EF2539EA960090E537 /* SplashView.swift in Sources */,
 				D1AD9C5F25372010002ABFF5 /* ViewController.swift in Sources */,
 				D1A929F22539EB390090E537 /* ActionDelegate.swift in Sources */,
+				D1A3951F2620CED600651AB9 /* KitUtils.swift in Sources */,
 				D1458B47253DD983004418C8 /* DashBoardTableView.swift in Sources */,
 				D1AD9C5B25372010002ABFF5 /* AppDelegate.swift in Sources */,
 				D18152522539F02E002E9BB8 /* UINavigationHelper.swift in Sources */,
 				D1458B41253DB25C004418C8 /* DashboardMenuView.swift in Sources */,
+				D1A3951A2620CAE800651AB9 /* CartItemCell.swift in Sources */,
 				D1458B3D253D7E9D004418C8 /* PromotionCell.swift in Sources */,
 				D1458B3B253D7AA8004418C8 /* PromotionModel.swift in Sources */,
 				D18152562539F513002E9BB8 /* ColorsHelper.swift in Sources */,
