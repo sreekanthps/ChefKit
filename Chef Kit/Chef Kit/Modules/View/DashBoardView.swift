@@ -13,13 +13,16 @@ import PinLayout
 
 class DashBoardView: UIView {
     
-    fileprivate let root: UIView = UIView()
+    fileprivate let root: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .yellow
+        return view
+    }()
     fileprivate var collectionView: UICollectionView
     fileprivate let flowLayout = UICollectionViewFlowLayout()
     var modelData: [PromotionModel]?
     let pageControl: UIPageControl = {
         let pc = UIPageControl()
-        pc.currentPage = 0
         pc.translatesAutoresizingMaskIntoConstraints = false
         return pc
     }()
@@ -27,21 +30,24 @@ class DashBoardView: UIView {
         flowLayout.scrollDirection = .horizontal
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         super.init(frame: .zero)
-       
         collectionView.register(PromotionCell.self, forCellWithReuseIdentifier: PromotionCell.reuseIdentifier)
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = .white
         collectionView.dataSource = self
         collectionView.delegate = self
-       
+        pageControl.numberOfPages = modelData?.count ?? 0
+        pageControl.currentPage = 0
+        pageControl.pageIndicatorTintColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.black
+        
         loadView()
     }
     func loadView() {
         removeAllSubviewsAndRemoveFromSuperview()
         root.flex.define { (flex) in
-            flex.addItem(collectionView).width(100%).height(500).justifyContent(.center).alignItems(.center)
-            flex.addItem(pageControl).marginTop(10).width(100%)
+            flex.addItem(collectionView).width(100%).height(400).justifyContent(.center).alignItems(.center)
+            flex.addItem(pageControl).marginTop(10).width(80).height(20)
         }
         addSubview(root)
     }

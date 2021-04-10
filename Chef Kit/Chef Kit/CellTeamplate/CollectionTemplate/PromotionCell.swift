@@ -12,6 +12,16 @@ import PinLayout
 
 class PromotionCell: UICollectionViewCell {
     static let reuseIdentifier = "PromotionCell"
+    
+    fileprivate let roundView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .red
+        view.layer.cornerRadius = (screenWidth - 100)/2
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.red.cgColor
+        return view
+    }()
+    
     fileprivate let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .center
@@ -22,15 +32,17 @@ class PromotionCell: UICollectionViewCell {
     }()
     fileprivate let headerLabel: UILabel = {
         let label = UILabel(frame: .zero)
+        label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 45, weight: .bold)
         return label
         
     }()
     fileprivate let textLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.numberOfLines = 2
+        label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 10, weight: .medium)
         return label
@@ -48,10 +60,13 @@ class PromotionCell: UICollectionViewCell {
     
     func layoutViews() {
         backgroundColor = .white
-        contentView.flex.define { (flex) in
+        contentView.flex.alignItems(.center).define { (flex) in
             flex.addItem(titleLabel).marginTop(40).marginHorizontal(20)
-            flex.addItem(headerLabel).marginTop(70).marginHorizontal(100)
-            flex.addItem(textLabel).marginTop(10).marginHorizontal(70)
+            flex.addItem(roundView).marginTop(30).justifyContent(.center).alignItems(.center).size(screenWidth - 100).define { (flex) in
+                flex.addItem(headerLabel).marginHorizontal(20)
+                flex.addItem(textLabel).marginTop(10).marginHorizontal(20)
+            }
+            
         }
     }
     func configure(model: PromotionModel) {

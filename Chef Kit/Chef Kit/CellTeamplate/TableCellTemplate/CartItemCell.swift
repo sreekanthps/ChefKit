@@ -14,7 +14,7 @@ import PinLayout
 class CartItemCell: UITableViewCell {
     
     static let reuseIdentifier = "CartItemCell"
-    let lblWidth  =  (screenWidth - 140) / 2
+    let lblWidth  =  (screenWidth - 150) / 2
     let imgView: UIImageView = {
          let imgView = UIImageView(frame: .zero)
          imgView.contentMode = .scaleAspectFit
@@ -54,19 +54,19 @@ class CartItemCell: UITableViewCell {
     
     func layoutViews() {
         self.contentView.flex.define { (flex) in
-            flex.addItem().marginHorizontal(20).direction(.row).marginVertical(10).justifyContent(.center).define { (flex) in
+            flex.addItem().direction(.row).marginVertical(10).justifyContent(.center).define { (flex) in
                flex.addItem(imgView).size(70)
-                flex.addItem(itemPrice).marginLeft(5).width(lblWidth)
-                flex.addItem(itemDesc).width(lblWidth).marginRight(5)
-                flex.addItem(delete).width(20).height(20)
+                flex.addItem(itemDesc).width(lblWidth).marginLeft(10)
+                flex.addItem(itemPrice).marginRight(10).width(lblWidth)
+                flex.addItem(delete).size(20)
            }
          }
     }
     
-    func configureData(data: MenuItemsModel) {
+    func configureData(data: CartModel) {
         imgView.image = UIImage(named: data.image ?? "pizza")
-        itemDesc.text = data.description
-        itemPrice.text = data.description
+        itemDesc.text = data.name
+        itemPrice.text = data.stringCost
         setNeedsLayout()
     }
     

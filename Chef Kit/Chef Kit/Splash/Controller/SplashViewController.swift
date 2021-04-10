@@ -32,9 +32,9 @@ class SplashViewController: UIViewController {
     
     func navigateToDashBoard() {
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (nil) in
-             //let newVC = DashBoardController()
+             let newVC = DashBoardController()
             //let newVC = DashBoardCollectionController()
-            let newVC = CartViewController()
+            //let newVC = CartViewController()
             self.navigationController?.pushViewController(newVC, animated: false)
         }
        

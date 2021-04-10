@@ -9,12 +9,12 @@
 import UIKit
 
 class DashBoardController: UIViewController {
-//    private var mainView: DashBoardView {
-//        return self.view as! DashBoardView
-//    }
-    private var mainView: DashboardMenuView {
-        return self.view as! DashboardMenuView
+    private var mainView: DashBoardView {
+        return self.view as! DashBoardView
     }
+//    private var mainView: DashboardMenuView {
+//        return self.view as! DashboardMenuView
+//    }
 //    private var mainView: DashBoardTableView {
 //            return self.view as! DashBoardTableView
 //        }
@@ -49,8 +49,8 @@ class DashBoardController: UIViewController {
         }
         
         override func loadView() {
-            //let view = DashBoardView(data: retunDataModel())
-            let view = DashboardMenuView(data: retunMenuModel())
+            let view = DashBoardView(data: retunDataModel())
+            //let view = DashboardMenuView(data: retunMenuModel())
             //let view = DashBoardTableView(dataModel: returnTableMenu())
             self.view = view
         }
