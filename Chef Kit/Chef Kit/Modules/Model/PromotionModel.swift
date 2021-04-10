@@ -21,3 +21,23 @@ struct MenuItemsModel {
     let contents: String?
     let price: String?
 }
+
+struct MenuModel {
+    let menuItem: String?
+}
+
+struct CartItemsModel {
+    let totaCost: Int? = 0
+    let deliveryCost: Int? = 0
+    let orders: [CartModel]?
+    let stringCost: String?
+}
+
+struct CartModel {
+    let name: String?
+    let image: String?
+    let quantity: Int?
+    let cost: Int? = 0
+    let stringCost: String?
+   
+}

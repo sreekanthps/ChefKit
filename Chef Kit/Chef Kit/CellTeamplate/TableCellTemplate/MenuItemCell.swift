@@ -40,7 +40,7 @@ class MenuItemCell: UITableViewCell {
      
      let itemDetails: UILabel = {
          let label = UILabel(frame: .zero)
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
          label.textColor = UIColor.hexColor(Colors.bc5)
          return label
      }()

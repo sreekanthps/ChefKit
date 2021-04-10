@@ -12,7 +12,23 @@ import PinLayout
 
 
 class DashboardMenuView: UIView {
-    fileprivate let root: UIView = UIView()
+    fileprivate let root: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        return view
+    }()
+    fileprivate let curvedView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .red
+        //view.layer.cornerRadius = 25
+        //view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        //view.roundCorners(corners: [.topLeft, .topRight])
+        let path = UIBezierPath(roundedRect:view.bounds, byRoundingCorners:[.topRight, .topLeft], cornerRadii: CGSize(width: 20, height: 20))
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = path.cgPath
+        maskLayer.frame = view.frame
+        return view
+    }()
     fileprivate var collectionView: UICollectionView
     fileprivate let flowLayout = UICollectionViewFlowLayout()
     var modelData: [MenuModel]?
@@ -36,7 +52,9 @@ class DashboardMenuView: UIView {
     func loadView() {
         removeAllSubviewsAndRemoveFromSuperview()
         root.flex.define { (flex) in
-        flex.addItem(collectionView).width(100%).height(100)
+            flex.addItem(curvedView).marginTop(100).width(100%).height(100).define { (flex) in
+                flex.addItem(collectionView).width(100%).height(80).marginTop(20)
+            }
            
         }
         addSubview(root)
@@ -73,5 +91,11 @@ extension DashboardMenuView: UICollectionViewDelegateFlowLayout,UICollectionView
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100,height: 70)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("didSelectItemAt : \(indexPath.item)")
+    }
 }

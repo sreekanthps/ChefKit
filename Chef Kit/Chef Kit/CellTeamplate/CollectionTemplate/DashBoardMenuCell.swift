@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FlexLayout
+import PinLayout
 
 class DashBoardMenuCell: UICollectionViewCell {
     static let reuseIdentifier = "DashBoardMenuCell"
@@ -26,7 +28,7 @@ class DashBoardMenuCell: UICollectionViewCell {
     func layoutViews() {
         backgroundColor = .white
         contentView.flex.define { (flex) in
-            flex.addItem(button).height(70)
+            flex.addItem(button).height(70).width(100%)
            
         }
     }

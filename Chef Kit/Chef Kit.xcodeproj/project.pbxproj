@@ -15,9 +15,18 @@
 		D1458B3D253D7E9D004418C8 /* PromotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B3C253D7E9D004418C8 /* PromotionCell.swift */; };
 		D1458B3F253DAF8F004418C8 /* DashBoardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B3E253DAF8F004418C8 /* DashBoardMenuCell.swift */; };
 		D1458B41253DB25C004418C8 /* DashboardMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B40253DB25C004418C8 /* DashboardMenuView.swift */; };
-		D1458B43253DB2EB004418C8 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B42253DB2EB004418C8 /* MenuModel.swift */; };
 		D1458B45253DC0DE004418C8 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B44253DC0DE004418C8 /* MenuItemCell.swift */; };
 		D1458B47253DD983004418C8 /* DashBoardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1458B46253DD983004418C8 /* DashBoardTableView.swift */; };
+		D160F18E262153510013C68A /* MenuOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F18D262153510013C68A /* MenuOptionsCell.swift */; };
+		D160F193262159150013C68A /* ButtonMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F192262159150013C68A /* ButtonMenuCell.swift */; };
+		D160F1A126215A0C0013C68A /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1A026215A0C0013C68A /* BaseCollectionView.swift */; };
+		D160F1A62621C9770013C68A /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1A52621C9770013C68A /* UIKitExtension.swift */; };
+		D160F1AB2621CEFF0013C68A /* DashBoardCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1AA2621CEFF0013C68A /* DashBoardCollectionController.swift */; };
+		D160F1B02621CF3A0013C68A /* DashBoardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1AF2621CF3A0013C68A /* DashBoardCollectionView.swift */; };
+		D160F1B52621D48A0013C68A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1B42621D48A0013C68A /* MockData.swift */; };
+		D160F1BA2621E0580013C68A /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1B92621E0580013C68A /* CartViewController.swift */; };
+		D160F1BF2621E18E0013C68A /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1BE2621E18E0013C68A /* CartView.swift */; };
+		D160F1C42622089A0013C68A /* ButtonOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160F1C32622089A0013C68A /* ButtonOptionsCell.swift */; };
 		D18152522539F02E002E9BB8 /* UINavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152512539F02E002E9BB8 /* UINavigationHelper.swift */; };
 		D18152542539F0CA002E9BB8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152532539F0CA002E9BB8 /* UIColorExtension.swift */; };
 		D18152562539F513002E9BB8 /* ColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18152552539F513002E9BB8 /* ColorsHelper.swift */; };
@@ -69,9 +78,18 @@
 		D1458B3C253D7E9D004418C8 /* PromotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCell.swift; sourceTree = "<group>"; };
 		D1458B3E253DAF8F004418C8 /* DashBoardMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardMenuCell.swift; sourceTree = "<group>"; };
 		D1458B40253DB25C004418C8 /* DashboardMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuView.swift; sourceTree = "<group>"; };
-		D1458B42253DB2EB004418C8 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		D1458B44253DC0DE004418C8 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		D1458B46253DD983004418C8 /* DashBoardTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTableView.swift; sourceTree = "<group>"; };
+		D160F18D262153510013C68A /* MenuOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsCell.swift; sourceTree = "<group>"; };
+		D160F192262159150013C68A /* ButtonMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMenuCell.swift; sourceTree = "<group>"; };
+		D160F1A026215A0C0013C68A /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		D160F1A52621C9770013C68A /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		D160F1AA2621CEFF0013C68A /* DashBoardCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionController.swift; sourceTree = "<group>"; };
+		D160F1AF2621CF3A0013C68A /* DashBoardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionView.swift; sourceTree = "<group>"; };
+		D160F1B42621D48A0013C68A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		D160F1B92621E0580013C68A /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D160F1BE2621E18E0013C68A /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		D160F1C32622089A0013C68A /* ButtonOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonOptionsCell.swift; sourceTree = "<group>"; };
 		D18152512539F02E002E9BB8 /* UINavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationHelper.swift; sourceTree = "<group>"; };
 		D18152532539F0CA002E9BB8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D18152552539F513002E9BB8 /* ColorsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsHelper.swift; sourceTree = "<group>"; };
@@ -162,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				D1458B31253D75D0004418C8 /* DashBoardController.swift */,
+				D160F1AA2621CEFF0013C68A /* DashBoardCollectionController.swift */,
+				D160F1B92621E0580013C68A /* CartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +192,8 @@
 				D1458B37253D76D8004418C8 /* DashBoardView.swift */,
 				D1458B40253DB25C004418C8 /* DashboardMenuView.swift */,
 				D1458B46253DD983004418C8 /* DashBoardTableView.swift */,
+				D160F1AF2621CF3A0013C68A /* DashBoardCollectionView.swift */,
+				D160F1BE2621E18E0013C68A /* CartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +212,7 @@
 			children = (
 				D1458B3C253D7E9D004418C8 /* PromotionCell.swift */,
 				D1458B3E253DAF8F004418C8 /* DashBoardMenuCell.swift */,
+				D160F18D262153510013C68A /* MenuOptionsCell.swift */,
 			);
 			path = CollectionTemplate;
 			sourceTree = "<group>";
@@ -197,8 +220,10 @@
 		D1458B36253D75F1004418C8 /* TableCellTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				D160F1C32622089A0013C68A /* ButtonOptionsCell.swift */,
 				D1458B44253DC0DE004418C8 /* MenuItemCell.swift */,
 				D1A395192620CAE800651AB9 /* CartItemCell.swift */,
+				D160F192262159150013C68A /* ButtonMenuCell.swift */,
 			);
 			path = TableCellTemplate;
 			sourceTree = "<group>";
@@ -207,9 +232,16 @@
 			isa = PBXGroup;
 			children = (
 				D1458B3A253D7AA8004418C8 /* PromotionModel.swift */,
-				D1458B42253DB2EB004418C8 /* MenuModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D160F197262159CB0013C68A /* BaseCollections */ = {
+			isa = PBXGroup;
+			children = (
+				D160F1A026215A0C0013C68A /* BaseCollectionView.swift */,
+			);
+			path = BaseCollections;
 			sourceTree = "<group>";
 		};
 		D18152572539F804002E9BB8 /* Animations */ = {
@@ -261,6 +293,8 @@
 				D18152532539F0CA002E9BB8 /* UIColorExtension.swift */,
 				D18152552539F513002E9BB8 /* ColorsHelper.swift */,
 				D1A3951E2620CED600651AB9 /* KitUtils.swift */,
+				D160F1A52621C9770013C68A /* UIKitExtension.swift */,
+				D160F1B42621D48A0013C68A /* MockData.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -290,6 +324,7 @@
 		D1AD9C5925372010002ABFF5 /* Chef Kit */ = {
 			isa = PBXGroup;
 			children = (
+				D160F197262159CB0013C68A /* BaseCollections */,
 				D1458B34253D75DD004418C8 /* CellTeamplate */,
 				D1458B2F253D7553004418C8 /* Modules */,
 				D18152572539F804002E9BB8 /* Animations */,
@@ -564,23 +599,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1458B32253D75D0004418C8 /* DashBoardController.swift in Sources */,
+				D160F18E262153510013C68A /* MenuOptionsCell.swift in Sources */,
 				D1458B45253DC0DE004418C8 /* MenuItemCell.swift in Sources */,
+				D160F1B52621D48A0013C68A /* MockData.swift in Sources */,
 				D1458B38253D76D8004418C8 /* DashBoardView.swift in Sources */,
-				D1458B43253DB2EB004418C8 /* MenuModel.swift in Sources */,
 				D1458B3F253DAF8F004418C8 /* DashBoardMenuCell.swift in Sources */,
 				D1A929ED2539E98B0090E537 /* SplashViewController.swift in Sources */,
 				D18152542539F0CA002E9BB8 /* UIColorExtension.swift in Sources */,
 				D1A929EF2539EA960090E537 /* SplashView.swift in Sources */,
+				D160F1A126215A0C0013C68A /* BaseCollectionView.swift in Sources */,
 				D1AD9C5F25372010002ABFF5 /* ViewController.swift in Sources */,
 				D1A929F22539EB390090E537 /* ActionDelegate.swift in Sources */,
 				D1A3951F2620CED600651AB9 /* KitUtils.swift in Sources */,
 				D1458B47253DD983004418C8 /* DashBoardTableView.swift in Sources */,
+				D160F1A62621C9770013C68A /* UIKitExtension.swift in Sources */,
+				D160F1C42622089A0013C68A /* ButtonOptionsCell.swift in Sources */,
+				D160F193262159150013C68A /* ButtonMenuCell.swift in Sources */,
 				D1AD9C5B25372010002ABFF5 /* AppDelegate.swift in Sources */,
 				D18152522539F02E002E9BB8 /* UINavigationHelper.swift in Sources */,
 				D1458B41253DB25C004418C8 /* DashboardMenuView.swift in Sources */,
 				D1A3951A2620CAE800651AB9 /* CartItemCell.swift in Sources */,
 				D1458B3D253D7E9D004418C8 /* PromotionCell.swift in Sources */,
+				D160F1BF2621E18E0013C68A /* CartView.swift in Sources */,
 				D1458B3B253D7AA8004418C8 /* PromotionModel.swift in Sources */,
+				D160F1AB2621CEFF0013C68A /* DashBoardCollectionController.swift in Sources */,
+				D160F1B02621CF3A0013C68A /* DashBoardCollectionView.swift in Sources */,
+				D160F1BA2621E0580013C68A /* CartViewController.swift in Sources */,
 				D18152562539F513002E9BB8 /* ColorsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

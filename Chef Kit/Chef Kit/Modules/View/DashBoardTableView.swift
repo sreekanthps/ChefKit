@@ -11,20 +11,20 @@ import UIKit
 class DashBoardTableView: UIView {
     fileprivate var modelData: [MenuItemsModel]?
     private let rootView: UIView = {
-         let uiview = UIView()
-           uiview.backgroundColor = UIColor.hexColor(Colors.backGround)
-         return uiview
-       }()
-       var tableView = UITableView()
-       required init?(coder aDecoder: NSCoder) {
-           super.init(coder: aDecoder)
-       }
-       
-       init() {
-           super.init(frame: .zero)
-           configure()
-           layout()
-       }
+        let uiview = UIView()
+        uiview.backgroundColor = UIColor.hexColor(Colors.backGround)
+        return uiview
+    }()
+    var tableView = UITableView()
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    init() {
+        super.init(frame: .zero)
+        configure()
+        layout()
+    }
        
     convenience init(dataModel:  [MenuItemsModel]?) {
         self.init()
@@ -70,7 +70,7 @@ extension DashBoardTableView: UITableViewDataSource,UITableViewDelegate  {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: CartItemCell.reuseIdentifier, for: indexPath) as? CartItemCell,
             let model = modelData?[indexPath.row]{
-            cell.configureData(data: model)
+            //cell.configureData(data: model)
             return cell
         }
         return UITableViewCell()

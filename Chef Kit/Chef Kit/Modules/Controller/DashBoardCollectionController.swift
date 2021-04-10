@@ -1,23 +1,19 @@
 //
-//  DashBoardController.swift
+//  DashBoardCollectionController.swift
 //  Chef Kit
 //
-//  Created by Swetha Sreekanth on 19/10/20.
-//  Copyright © 2020 Brewers. All rights reserved.
+//  Created by Swetha Sreekanth on 10/4/21.
+//  Copyright © 2021 Brewers. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class DashBoardController: UIViewController {
-//    private var mainView: DashBoardView {
-//        return self.view as! DashBoardView
-//    }
-    private var mainView: DashboardMenuView {
-        return self.view as! DashboardMenuView
+class DashBoardCollectionController: UIViewController {
+    
+    private var mainView: DashBoardCollectionView {
+        return self.view as! DashBoardCollectionView
     }
-//    private var mainView: DashBoardTableView {
-//            return self.view as! DashBoardTableView
-//        }
     
     init(){
             super.init(nibName: nil, bundle: Bundle.main)
@@ -36,13 +32,6 @@ class DashBoardController: UIViewController {
             navigationController?.setNavigationBarHidden(true, animated: animated)
         }
         
-        func navigateToDashBoard() {
-            Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (nil) in
-    //             let newVC = AWSLoginController()
-    //            self.navigationController?.pushViewController(newVC, animated: false)
-            }
-           
-        }
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
             
@@ -50,11 +39,9 @@ class DashBoardController: UIViewController {
         
         override func loadView() {
             //let view = DashBoardView(data: retunDataModel())
-            let view = DashboardMenuView(data: retunMenuModel())
+            let view = DashBoardCollectionView(dataModel: retunMenuModel())
             //let view = DashBoardTableView(dataModel: returnTableMenu())
             self.view = view
         }
-        
-    
-        
 }
+
